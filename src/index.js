@@ -1,9 +1,10 @@
-import ReactDOM from "react-dom/client";
+import {createRoot} from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css"
-import App from "./App";
-import Product from "./components/product";
 
-const root=ReactDOM.createRoot(document.getElementById('root'))
-root.render([<App/>,<Product/>])
+// import App from "./components/functional/App";
+import App from "./components/App";
+
+const root=createRoot(document.getElementById('root'))
+root.render(<App/>)
 
 // ReactDOM.hydrateRoot(document.getElementById('root'),[<App/>,<Product/>])
